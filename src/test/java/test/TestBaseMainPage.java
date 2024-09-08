@@ -12,6 +12,5 @@ public class TestBaseMainPage {
         Configuration.browserVersion = System.getProperty("version", "100.0");
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 30000;
-        //Configuration.holdBrowserOpen = true;
     }
 }
