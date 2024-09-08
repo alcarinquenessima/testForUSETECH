@@ -6,15 +6,16 @@ import org.junit.jupiter.api.Test;
 import pages.MainPageLocators;
 import static io.qameta.allure.Allure.step;
 
+@DisplayName("Проверка наполнения Главной страницы")
 @Tag("AllTests")
 public class UseTechMainPageTest extends TestBaseMainPage {
     MainPageLocators testLocators = new MainPageLocators();
 
     @Test
     @Tag("MainPageTest")
-    @DisplayName("Проверка наполнения Главной страницы")
+    @DisplayName("Проверка ссылок в хэдере и соответствие открывающихся страниц")
     public void checkForHeaders() {
-        step("Проверка ссылок в хэдере и соответствие открывающихся страниц", () -> {
+        step("Проверка ссылок", () -> {
             testLocators.openPage()
                     .checkingTheFirstLink()
                     .checkingTheSecondLink()
