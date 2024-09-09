@@ -70,7 +70,7 @@ public class FriendPageLocator {
                 "Пожалуйста, проверьте их и попробуйте ещё раз."));
     }
     public FriendPageLocator openUrlForHeaders() {
-        open("");
+        open("careerUrl");
         return this;
     }
     public FriendPageLocator findFirstButton () {
