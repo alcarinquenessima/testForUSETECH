@@ -8,7 +8,7 @@ import static io.qameta.allure.Allure.step;
 
 @DisplayName("Проверка наполнения Главной страницы")
 @Tag("AllTests")
-public class UseTechMainPageTest extends TestBaseMainPage {
+public class UseTechMainPageTest extends TestBase {
     MainPageLocators testLocators = new MainPageLocators();
 
     @Test

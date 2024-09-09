@@ -3,6 +3,7 @@ package pages;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
 
 public class FriendPageLocator {
@@ -17,13 +18,15 @@ public class FriendPageLocator {
     private final SelenideElement header1 = $("#menu-item-16507");
     private final SelenideElement header2 = $("#menu-item-16506");
     private final SelenideElement firstButtonHeader = $("#menu-item-1322");
+    private final String careerUrl = baseUrl.replace("usetech.ru", "career.usetech.ru");
+
 
     public FriendPageLocator openUrlReferal() {
-        open("bonus/#send-form");
+        open(careerUrl + "bonus/#send-form");
         return this;
     }
     public FriendPageLocator openUrlContactInfo(){
-        open("contacts/");
+        open( careerUrl + "contacts/");
         return this;
     }
     public FriendPageLocator clickOnTheRecommendButton() {

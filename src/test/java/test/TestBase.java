@@ -12,10 +12,10 @@ import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class TestBaseFriendPage {
+public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://career.usetech.ru/");
+        Configuration.baseUrl = System.getProperty("baseUrl", "https://usetech.ru/");
         Configuration.browserSize = System.getProperty("browser_size","1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "100.0");

@@ -10,7 +10,7 @@ import randomValuesForTests.fakeData;
 
 @DisplayName("Проверка страницы Реферальная программа")
 @Tag("AllTests")
-public class UseTechFriendTest extends TestBaseFriendPage {
+public class UseTechFriendTest extends TestBase {
     FriendPageLocator testLocators = new FriendPageLocator();
     fakeData fakeDataInfo = new fakeData();
 
