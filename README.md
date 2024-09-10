@@ -95,7 +95,16 @@ ___
 <img title="Jira" src="images/screenshots/Jira.png" width="850">  
 </p>
 
+___
+<a id="jira"></a>
+## <img alt="telegram" height="25" src="images/logos/Telegram.svg" width="25"/></a> Отчет в Telegram</a>
+
+<p>  
+<img title="Jira" src="images/screenshots/telegram.png" width="300">  
+</p>
+
 ____
+
 <a id="video"></a>
 ## <img alt="Selenoid" height="25" src="images/logos/Selenoid.svg" width="25"/></a> Примеры видео выполнения тестов на Selenoid
 
