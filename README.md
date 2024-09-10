@@ -99,7 +99,7 @@ ___
 <a id="telegram"></a>
 ## <img alt="telegram" height="25" src="images/logos/Telegram.svg" width="25"/></a> Отчет в Telegram</a>
 
-<p>  
+<p align="center">  
 <img title="Jira" src="images/screenshots/telegram.png" width="300">  
 </p>
 
