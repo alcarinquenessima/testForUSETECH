@@ -96,7 +96,7 @@ ___
 </p>
 
 ___
-<a id="jira"></a>
+<a id="telegram"></a>
 ## <img alt="telegram" height="25" src="images/logos/Telegram.svg" width="25"/></a> Отчет в Telegram</a>
 
 <p>  
