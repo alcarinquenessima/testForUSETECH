@@ -37,43 +37,43 @@ public class MainPageLocators {
     }
 
     @Step("Проверка 1 ссылки")
-    public MainPageLocators checkingTheFirstLink(){
+    public MainPageLocators checkTheFirstLink(){
         titleOfThe1stPage.click();
         headerOfTheLink.shouldHave((Condition.text("Заказная разработка и сопровождение программного обеспечения")));
         return this;
     }
     @Step("Проверка 2 ссылки")
-    public MainPageLocators checkingTheSecondLink(){
+    public MainPageLocators checkTheSecondLink(){
         titleOfThe2ndPage.click();
         headerOfTheLink.shouldHave((Condition.text("Новости")));
         return this;
     }
     @Step("Проверка 3 ссылки")
-    public MainPageLocators checkingTheThirdLink(){
+    public MainPageLocators checkTheThirdLink(){
         titleOfThe3dPage.click();
         headerOfTheLink.shouldHave((Condition.text("Услуги")));
         return this;
     }
     @Step("Проверка 4 ссылки")
-    public MainPageLocators checkingTheFourthLink(){
+    public MainPageLocators checkTheFourthLink(){
         titleOfThe4thPage.click();
         headerOfTheLink.shouldHave((Condition.text("Отрасли")));
         return this;
     }
     @Step("Проверка 5 ссылки")
-    public MainPageLocators checkingTheFifthLink(){
+    public MainPageLocators checkTheFifthLink(){
         titleOfThe5thPage.click();
         headerOfTheLink.shouldHave((Condition.text("Награды")));
         return this;
     }
     @Step("Проверка 6 ссылки")
-    public MainPageLocators checkingTheSixthLink(){
+    public MainPageLocators checkTheSixthLink(){
         titleOfThe6thPage.click();
         headerOfTheLink.shouldHave((Condition.text("Контакты")));
         return this;
     }
     @Step("Проверка 7 ссылки")
-    public MainPageLocators checkingTheSeventhLink(){
+    public MainPageLocators checkTheSeventhLink(){
         titleOfThe7thPage.click();
         headerOfThe7thPage.shouldBe(visible);
         headerOfThe7thPage.shouldHave((Condition.text("Поиск вакансий")));
@@ -81,7 +81,7 @@ public class MainPageLocators {
         return this;
     }
     @Step("Проверка 8 ссылки")
-    public MainPageLocators checkingTheEightLink(){
+    public MainPageLocators checkTheEightLink(){
         titleOfThe8thPage.click();
         firstProduct.shouldHave((Condition.text("UseBus")));
         secondProduct.shouldHave((Condition.text("Octopus")));
@@ -90,7 +90,7 @@ public class MainPageLocators {
         return this;
     }
     @Step("Проверка 9 ссылки")
-    public void checkingTheNinthLink(){
+    public void checkTheNinthLink(){
         titleOfThe9thPage.click();
         assertThat(url()).isEqualTo(expectedUrl);
     }

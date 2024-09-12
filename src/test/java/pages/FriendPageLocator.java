@@ -48,7 +48,7 @@ public class FriendPageLocator {
         candidateContactInfo.setValue(value);
         return this;
     }
-    public FriendPageLocator inputcandidateSpecialization (String value){
+    public FriendPageLocator inputCandidateSpecialization (String value){
         candidateSpecialization.click();
         candidateSpecialization.setValue(value);
         return this;

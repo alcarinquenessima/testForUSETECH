@@ -1,7 +1,7 @@
-package randomValuesForTests;
+package random_values;
 import com.github.javafaker.Faker;
 
-public class fakeData {
+public class FakeData {
     Faker faker = new Faker();
 
     public String fullName = faker.name().fullName();

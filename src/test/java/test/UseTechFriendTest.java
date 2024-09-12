@@ -6,20 +6,20 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.FriendPageLocator;
-import randomValuesForTests.fakeData;
+import random_values.FakeData;
 
 @DisplayName("Проверка страницы Реферальная программа")
 @Tag("AllTests")
 public class UseTechFriendTest extends TestBase {
     FriendPageLocator testLocators = new FriendPageLocator();
-    fakeData fakeDataInfo = new fakeData();
+    FakeData fakeDataInfo = new FakeData();
 
     @ParameterizedTest(name = "Проверка хэдеров на странице")
     @Tag("FriendPageTest")
     @ValueSource(strings = {
             "О компании,Реферальная система — пригласи друга в Usetech"
     })
-    public void checkForHeaders(String linkTitles) {
+    public void checkForHeadersTest(String linkTitles) {
         String[] expectedTitles = linkTitles.split(",");
         testLocators.openUrlForHeaders()
                 .findFirstButton()
@@ -29,13 +29,13 @@ public class UseTechFriendTest extends TestBase {
     @Test
     @Tag("FriendPageTest")
     @DisplayName("Проверка cообщения об ошибке при неполном вводе данных на рефералке")
-    public void checkForCareerInput() {
+    public void checkForCareerInputTest() {
         testLocators.openUrlReferal()
                 .clickOnTheRecommendButton()
                 .inputName(fakeDataInfo.fullName)
                 .inputYourContactInfo(fakeDataInfo.userNumber)
                 .inputCandidateContactInfo(fakeDataInfo.email)
-                .inputcandidateSpecialization(fakeDataInfo.randomCareer)
+                .inputCandidateSpecialization(fakeDataInfo.randomCareer)
                 .clickAcceptanceButton()
                 .clickSubmitButton()
                 .errorMessage();
@@ -43,7 +43,7 @@ public class UseTechFriendTest extends TestBase {
     @Test
     @Tag("FriendPageTest")
     @DisplayName("Проверка cообщения об ошибке при неполном вводе данных во вкладке Контакты")
-    public void checkForInfoInput() {
+    public void checkForInfoInputTest() {
         testLocators.openUrlContactInfo()
                 .inputName(fakeDataInfo.fullName)
                 .clickAcceptanceButton2()

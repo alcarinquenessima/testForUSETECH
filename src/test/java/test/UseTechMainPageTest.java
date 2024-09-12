@@ -14,18 +14,18 @@ public class UseTechMainPageTest extends TestBase {
     @Test
     @Tag("MainPageTest")
     @DisplayName("Проверка ссылок в хэдере и соответствие открывающихся страниц")
-    public void checkForHeaders() {
+    public void checkForHeadersTest() {
         step("Проверка ссылок", () -> {
             testLocators.openPage()
-                    .checkingTheFirstLink()
-                    .checkingTheSecondLink()
-                    .checkingTheThirdLink()
-                    .checkingTheFourthLink()
-                    .checkingTheFifthLink()
-                    .checkingTheSixthLink()
-                    .checkingTheSeventhLink()
-                    .checkingTheEightLink()
-                    .checkingTheNinthLink();
+                    .checkTheFirstLink()
+                    .checkTheSecondLink()
+                    .checkTheThirdLink()
+                    .checkTheFourthLink()
+                    .checkTheFifthLink()
+                    .checkTheSixthLink()
+                    .checkTheSeventhLink()
+                    .checkTheEightLink()
+                    .checkTheNinthLink();
         });
 
     }
